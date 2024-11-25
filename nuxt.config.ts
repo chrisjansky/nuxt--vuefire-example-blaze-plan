@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     // for the upcoming preset
     firebase: {
       gen: 2,
-      nodeVersion: '18',
+      nodeVersion: '20',
     },
   },
 
@@ -54,20 +54,18 @@ export default defineNuxtConfig({
     appCheck: {
       provider: 'ReCaptchaV3',
       // site key, NOT secret key
-      key: '6LeS5q0nAAAAABH3u13ntLwuIOkiNjHlXJOXoN5T',
+      key: '6LfQy4gqAAAAAGWxzKamZcCu38HOSsAJ-ioHaPoN',
       isTokenAutoRefreshEnabled: true,
     },
 
     config: {
-      apiKey: 'AIzaSyBsdR5gT1fFBF5c8YDUw_4Qcg2E_C9Pwn8',
-      authDomain: 'nuxt-vuefire-example-blaze.firebaseapp.com',
-      databaseURL:
-        'https://nuxt-vuefire-example-blaze-default-rtdb.firebaseio.com',
-      projectId: 'nuxt-vuefire-example-blaze',
-      storageBucket: 'nuxt-vuefire-example-blaze.appspot.com',
-      messagingSenderId: '254121855253',
-      appId: '1:254121855253:web:c1e3357402843d829e411c',
-      measurementId: 'G-LL0HQ2E3J2',
+      apiKey: 'AIzaSyB1Uku_Qa6fCVFNNXUxota6VJDdNN05Vss',
+      authDomain: 'kometa-dev-2024-app.web.app',
+      databaseURL: 'https://kometa-dev-2024-app-default-rtdb.europe-west1.firebasedatabase.app',
+      projectId: 'kometa-dev-2024-app',
+      storageBucket: 'kometa-dev-2024-app.firebasestorage.app',
+      messagingSenderId: '549272748425',
+      appId: '1:549272748425:web:ea53ea11473f4f5e76e158',
     },
   },
 

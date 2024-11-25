@@ -90,11 +90,7 @@ watch(user, async (currentUser, previousUser) => {
 
   <footer>
     <a href="https://github.com/posva/nuxt--vuefire-example-blaze-plan">
-      <img
-        src="@/assets/github-mark.svg"
-        alt="GitHub logo"
-        class="logo github"
-      />
+      <img src="@/assets/github-mark.svg" alt="GitHub logo" class="logo github" />
       Source Code
     </a>
   </footer>
@@ -108,12 +104,15 @@ watch(user, async (currentUser, previousUser) => {
 
   transition: filter ease-out 0.3s;
 }
+
 .logo.vuefire {
   height: 7.5em;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #00dc82aa);
 }
+
 .logo.vuefire:hover {
   filter: drop-shadow(0 0 2em #f78200aa);
 }
@@ -123,6 +122,7 @@ watch(user, async (currentUser, previousUser) => {
     height: 4em;
     padding: 0.5em;
   }
+
   .logo.vuefire {
     height: 5em;
   }

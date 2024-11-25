@@ -13,15 +13,18 @@ const routes = computed(() =>
 </script>
 
 <template>
-  <nav class="links">
-    <ul>
-      <li v-for="route in routes">
-        <NuxtLink :to="route.to" v-slot="{ href }">{{
-          route.text || href
-        }}</NuxtLink>
-      </li>
-    </ul>
-  </nav>
+  <div>
+    <nav class="links">
+      <ul>
+        <li v-for="route in routes">
+          <NuxtLink :to="route.to" v-slot="{ href }">{{
+            route.text || href
+            }}</NuxtLink>
+        </li>
+      </ul>
+    </nav>
+    <LoginStatus />
+  </div>
 </template>
 
 <style scoped>
@@ -63,18 +66,21 @@ nav.links li a:hover::after {
 .router-link-active {
   color: #00dc82;
 }
+
 nav.links li a.router-link-active::after {
   top: 75%;
   --background: var(--border);
 }
 
-nav.links > ul {
+nav.links>ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.75rem;
   justify-items: center;
-  max-width: 1000px; /* Optional: set a max width for the grid */
-  margin: 0 auto; /* Optional: center the grid horizontally */
+  max-width: 1000px;
+  /* Optional: set a max width for the grid */
+  margin: 0 auto;
+  /* Optional: center the grid horizontally */
 }
 
 .links li {
