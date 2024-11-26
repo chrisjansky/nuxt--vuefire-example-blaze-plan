@@ -106,6 +106,9 @@ service cloud.firestore {
       ;
     }
 
+    match /orders/{orderId} {
+      allow read: if request.auth.uid == resource.data.userId; 
+    }
 
     match /count/{day} {
     	allow read;
