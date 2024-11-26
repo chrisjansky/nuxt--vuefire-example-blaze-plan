@@ -19,11 +19,10 @@ const routes = computed(() =>
         <li v-for="route in routes">
           <NuxtLink :to="route.to" v-slot="{ href }">{{
             route.text || href
-            }}</NuxtLink>
+          }}</NuxtLink>
         </li>
       </ul>
     </nav>
-    <LoginStatus />
   </div>
 </template>
 

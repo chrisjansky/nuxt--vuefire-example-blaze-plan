@@ -1,9 +1,6 @@
-<script lang="ts">
-import { GoogleAuthProvider } from 'firebase/auth'
-export const googleAuthProvider = new GoogleAuthProvider()
-</script>
-
 <script lang="ts" setup>
+import { GoogleAuthProvider } from 'firebase/auth'
+
 import {
   getRedirectResult,
   signInAnonymously,
@@ -21,6 +18,8 @@ definePageMeta({
   linkTitle: 'Login',
   order: 2,
 })
+
+const googleAuthProvider = new GoogleAuthProvider()
 
 const auth = useFirebaseAuth()! // only exists on client side
 const user = useCurrentUser()
@@ -65,8 +64,7 @@ const route = useRoute()
 
     <div v-else-if="route.query.redirect" class="message-box">
       <p>
-        Please login to access <code>{{ route.query.redirect }}</code
-        >.
+        Please login to access <code>{{ route.query.redirect }}</code>.
       </p>
     </div>
 
@@ -74,16 +72,11 @@ const route = useRoute()
       <div>
         You are currently logged in as:
         <br />
-        <img
-          class="avatar"
-          v-if="user.photoURL"
-          :src="user.photoURL"
-          referrerpolicy="no-referrer"
-        />
+        <img class="avatar" v-if="user.photoURL" :src="user.photoURL" referrerpolicy="no-referrer" />
         <br />
-        <strong
-          >{{ user.isAnonymous ? '🥸' : '' }} {{ user.displayName }}.</strong
-        >
+        <strong>{{ user.isAnonymous ? '🥸' : '' }} {{ user.displayName }}.</strong>
+        <br />
+        <small>{{ user.email }}</small>
       </div>
 
       <button @click="signOut(auth)">Logout</button>
@@ -104,7 +97,7 @@ const route = useRoute()
   padding: 1em 0;
 }
 
-main > button {
+main>button {
   margin: 1em 0;
 }
 </style>
