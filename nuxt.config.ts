@@ -54,21 +54,21 @@ export default defineNuxtConfig({
       sessionCookie: true,
     },
 
-    appCheck: {
-      provider: 'ReCaptchaV3',
-      // site key, NOT secret key
-      key: '6LfQy4gqAAAAAGWxzKamZcCu38HOSsAJ-ioHaPoN',
-      isTokenAutoRefreshEnabled: true,
-    },
+    // appCheck: {
+    //   provider: 'ReCaptchaV3',
+    //   // site key, NOT secret key
+    //   key: '6LfQy4gqAAAAAGWxzKamZcCu38HOSsAJ-ioHaPoN',
+    //   isTokenAutoRefreshEnabled: true,
+    // },
 
     config: {
-      apiKey: 'AIzaSyB1Uku_Qa6fCVFNNXUxota6VJDdNN05Vss',
-      authDomain: 'kometa-dev-2024-app.web.app',
-      databaseURL: 'https://kometa-dev-2024-app-default-rtdb.europe-west1.firebasedatabase.app',
-      projectId: 'kometa-dev-2024-app',
-      storageBucket: 'kometa-dev-2024-app.firebasestorage.app',
-      messagingSenderId: '549272748425',
-      appId: '1:549272748425:web:ea53ea11473f4f5e76e158',
+      apiKey: 'AIzaSyBBnd7kl_9c8vEtsNZ1MkZJT8k_-JkOKBs',
+      authDomain: 'ch-test-2024.firebaseapp.com',
+      projectId: 'ch-test-2024',
+      storageBucket: 'ch-test-2024.firebasestorage.app',
+      messagingSenderId: '76344683635',
+      appId: '1:76344683635:web:27b9c0ed6a8312af26ce06',
+      measurementId: 'G-0QD3CZY4CP',
     },
   },
 
