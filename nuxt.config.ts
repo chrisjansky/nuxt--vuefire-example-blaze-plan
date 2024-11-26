@@ -49,7 +49,10 @@ export default defineNuxtConfig({
         },
       },
     },
-    auth: true,
+    auth: {
+      enabled: true,
+      sessionCookie: true,
+    },
 
     appCheck: {
       provider: 'ReCaptchaV3',

@@ -6,7 +6,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
-    "emulators": "firebase emulators:start"
+    "emulators": "firebase emulators:start --import=./.export --export-on-exit --only auth,database,firestore,storage,hosting"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.3.9",

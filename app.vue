@@ -82,7 +82,10 @@ watch(user, async (currentUser, previousUser) => {
     </a>
   </div>
 
-  <h1>Nuxt + VueFire</h1>
+  <div class="panel">
+    <h1>Nuxt + VueFire</h1>
+    <LoginStatus />
+  </div>
 
   <NavigationLinks />
 
@@ -131,5 +134,11 @@ watch(user, async (currentUser, previousUser) => {
 .logo.github {
   height: 1em;
   padding: 0 0.15em;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>

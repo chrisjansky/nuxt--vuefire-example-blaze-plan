@@ -23,3 +23,6 @@ logs
 !.env.example
 service-account.json
 .firebase
+
+# Firebase Emulator export
+.export
